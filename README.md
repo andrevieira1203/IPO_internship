@@ -1,4 +1,4 @@
-# IPO Internship -> Bioinformatic Analysis of Molecular Alterations in Prostate Cancer
+# IPO Internship : Bioinformatic Analysis of Molecular Alterations in Prostate Cancer
 
 ## Descrição
 
