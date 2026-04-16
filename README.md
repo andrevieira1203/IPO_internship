@@ -1,6 +1,6 @@
-# 🧬 IPO Internship — Bioinformatic Analysis of Molecular Alterations in Prostate Cancer
+# IPO Internship -> Bioinformatic Analysis of Molecular Alterations in Prostate Cancer
 
-## 📋 Descrição
+## Descrição
 
 Este repositório contém o trabalho desenvolvido durante o estágio no **IPO (Instituto Português de Oncologia)**, com foco na análise bioinformática de **alterações moleculares no tecido normal adjacente ao tumor (NAT — Normal Adjacent Tissue)** em casos de **cancro da próstata**.
 
@@ -8,7 +8,7 @@ O objetivo central é compreender de que forma o tecido aparentemente normal que
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 IPO_internship/
@@ -19,11 +19,11 @@ IPO_internship/
 └── README.md                 # Documentação do projeto
 ```
 
-> ⚠️ **Nota:** O dataset `TCGA_PRAD_IlluminiSeq` (dados de sequenciação do The Cancer Genome Atlas — Prostate Adenocarcinoma) foi utilizado como base adicional, mas não foi incluído no repositório devido ao seu tamanho elevado.
+> **Nota:** O dataset `TCGA_PRAD_IlluminiSeq` (dados de sequenciação do The Cancer Genome Atlas — Prostate Adenocarcinoma) foi utilizado como base adicional, mas não foi incluído no repositório devido ao seu tamanho elevado.
 
 ---
 
-## 🔬 Dados Utilizados
+## Dados Utilizados
 
 | Dataset | Fonte | Descrição |
 |---|---|---|
@@ -33,7 +33,7 @@ IPO_internship/
 
 ---
 
-## 🧪 Análise
+## Análise
 
 A análise principal encontra-se no notebook **`AnaliseEstagio.ipynb`** e inclui:
 
@@ -45,7 +45,7 @@ A análise principal encontra-se no notebook **`AnaliseEstagio.ipynb`** e inclui
 
 ---
 
-## 🛠️ Tecnologias e Bibliotecas
+## Tecnologias e Bibliotecas
 
 - **Python 3**
 - **Jupyter Notebook**
@@ -57,7 +57,7 @@ A análise principal encontra-se no notebook **`AnaliseEstagio.ipynb`** e inclui
 
 ---
 
-## 🚀 Como Executar
+##Como Executar
 
 1. Clona o repositório:
    ```bash
@@ -75,23 +75,15 @@ A análise principal encontra-se no notebook **`AnaliseEstagio.ipynb`** e inclui
    jupyter notebook AnaliseEstagio.ipynb
    ```
 
-> 📌 Para reproduzir a análise completa, é necessário obter o dataset `TCGA_PRAD_IlluminiSeq` diretamente a partir do [portal do TCGA](https://portal.gdc.cancer.gov/) e colocá-lo na raiz do projeto.
+> Para reproduzir a análise completa, é necessário obter o dataset `TCGA_PRAD_IlluminiSeq` diretamente a partir do [portal do TCGA](https://portal.gdc.cancer.gov/) e colocá-lo na raiz do projeto.
 
 ---
 
-## 🏥 Contexto
+## Contexto
 
 Este trabalho foi realizado no âmbito de um estágio no **IPO — Instituto Português de Oncologia**, inserido numa linha de investigação sobre biomarcadores e alterações epigenéticas/genómicas no cancro da próstata. O estudo do tecido NAT é relevante para compreender os mecanismos de campo cancerígeno (*field cancerization*) e identificar potenciais alvos terapêuticos ou marcadores de diagnóstico precoce.
 
 ---
 
-## 👤 Autor
 
-**André Vieira**
-[GitHub: @andrevieira1203](https://github.com/andrevieira1203)
 
----
-
-## 📄 Licença
-
-Este projeto não possui licença definida. Para utilização ou reprodução, por favor contacte o autor.
