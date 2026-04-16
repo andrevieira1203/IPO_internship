@@ -1,89 +1,86 @@
 # IPO Internship : Bioinformatic Analysis of Molecular Alterations in Prostate Cancer
 
-## Descrição
+## Description
 
-Este repositório contém o trabalho desenvolvido durante o estágio no **IPO (Instituto Português de Oncologia)**, com foco na análise bioinformática de **alterações moleculares no tecido normal adjacente ao tumor (NAT — Normal Adjacent Tissue)** em casos de **cancro da próstata**.
+This repository contains the work developed during an internship at **IPO (Instituto Português de Oncologia)**, focused on the bioinformatic analysis of **molecular alterations in Normal Adjacent Tissue (NAT)** to tumors in **prostate cancer**.
 
-O objetivo central é compreender de que forma o tecido aparentemente normal que envolve um tumor apresenta alterações moleculares distintas do tecido saudável, contribuindo para uma melhor compreensão da progressão tumoral e dos mecanismos epigenéticos/genómicos associados ao cancro da próstata.
+The main goal is to understand how the apparently normal tissue surrounding a tumor presents molecular alterations distinct from healthy tissue, contributing to a better understanding of tumor progression and the epigenetic/genomic mechanisms associated with prostate cancer.
 
 ---
 
-## Estrutura do Repositório
+## Repository Structure
 
 ```
 IPO_internship/
 │
-├── InitialDatasets/          # Datasets iniciais utilizados na análise
-├── AnaliseEstagio.ipynb      # Notebook principal com toda a análise bioinformática
-├── data.csv                  # Dados processados utilizados nas análises
-└── README.md                 # Documentação do projeto
+├── InitialDatasets/          # Initial datasets used in the analysis
+├── AnaliseEstagio.ipynb      # Main notebook with the full bioinformatic analysis
+├── data.csv                  # Processed data used in the analyses
+└── README.md                 # Project documentation
 ```
 
-> **Nota:** O dataset `TCGA_PRAD_IlluminiSeq` (dados de sequenciação do The Cancer Genome Atlas — Prostate Adenocarcinoma) foi utilizado como base adicional, mas não foi incluído no repositório devido ao seu tamanho elevado.
+> **Note:** The `TCGA_PRAD_IlluminiSeq` dataset (from The Cancer Genome Atlas — Prostate Adenocarcinoma) was used as an additional data source but was not included in the repository due to its large size.
 
 ---
 
-## Dados Utilizados
+## Data Sources
 
-| Dataset | Fonte | Descrição |
+| Dataset | Source | Description |
 |---|---|---|
-| InitialDatasets | IPO / local | Conjuntos de dados iniciais da análise |
-| data.csv | Processado | Dados integrados e limpos para análise |
-| TCGA_PRAD_IlluminiSeq | [TCGA](https://www.cancer.gov/tcga) | Dados de expressão génica por sequenciação (Illumina) — não incluído |
+| InitialDatasets | IPO / local | Initial datasets for the analysis |
+| data.csv | Processed | Integrated and cleaned data for analysis |
+| TCGA_PRAD_IlluminiSeq | [TCGA](https://www.cancer.gov/tcga) | RNA-seq gene expression data (Illumina) — not included |
 
 ---
 
-## Análise
+## Analysis
 
-A análise principal encontra-se no notebook **`AnaliseEstagio.ipynb`** e inclui:
+The main analysis is contained in **`AnaliseEstagio.ipynb`** and includes:
 
-- **Pré-processamento de dados** — limpeza, normalização e integração dos datasets
-- **Análise exploratória (EDA)** — visualização de distribuições e padrões nos dados moleculares
-- **Comparação NAT vs. Tumor** — identificação de alterações moleculares diferenciais entre tecido tumoral e tecido normal adjacente
-- **Análise de expressão génica** — estudo de genes diferencialmente expressos com recurso a dados de RNA-seq (TCGA PRAD)
-- **Visualizações bioinformáticas** — heatmaps, volcano plots e outros gráficos de suporte à interpretação dos resultados
+- **Data preprocessing** — cleaning, normalization, and integration of datasets
+- **Exploratory Data Analysis (EDA)** — visualization of distributions and patterns in molecular data
+- **NAT vs. Tumor comparison** — identification of differential molecular alterations between tumor and normal adjacent tissue
+- **Gene expression analysis** — study of differentially expressed genes using RNA-seq data (TCGA PRAD)
+- **Bioinformatic visualizations** — heatmaps, volcano plots, and other supporting charts
 
 ---
 
-## Tecnologias e Bibliotecas
+## Technologies & Libraries
 
 - **Python 3**
 - **Jupyter Notebook**
-- Bibliotecas prováveis:
-  - `pandas`, `numpy` — manipulação de dados
-  - `matplotlib`, `seaborn` — visualização
-  - `scipy`, `statsmodels` — análise estatística
-  - `sklearn` — machine learning / redução de dimensionalidade (PCA, etc.)
+- Likely libraries:
+  - `pandas`, `numpy` — data manipulation
+  - `matplotlib`, `seaborn` — visualization
+  - `scipy`, `statsmodels` — statistical analysis
+  - `sklearn` — dimensionality reduction (PCA, etc.)
 
 ---
 
-##Como Executar
+## Getting Started
 
-1. Clona o repositório:
+1. Clone the repository:
    ```bash
    git clone https://github.com/andrevieira1203/IPO_internship.git
    cd IPO_internship
    ```
 
-2. Instala as dependências (recomenda-se ambiente virtual):
+2. Install dependencies (virtual environment recommended):
    ```bash
    pip install pandas numpy matplotlib seaborn scipy scikit-learn jupyter
    ```
 
-3. Abre o notebook:
+3. Open the notebook:
    ```bash
    jupyter notebook AnaliseEstagio.ipynb
    ```
 
-> Para reproduzir a análise completa, é necessário obter o dataset `TCGA_PRAD_IlluminiSeq` diretamente a partir do [portal do TCGA](https://portal.gdc.cancer.gov/) e colocá-lo na raiz do projeto.
+> To fully reproduce the analysis, download the `TCGA_PRAD_IlluminiSeq` dataset from the [TCGA portal](https://portal.gdc.cancer.gov/) and place it in the root of the project.
 
 ---
 
-## Contexto
+## Context
 
-Este trabalho foi realizado no âmbito de um estágio no **IPO — Instituto Português de Oncologia**, inserido numa linha de investigação sobre biomarcadores e alterações epigenéticas/genómicas no cancro da próstata. O estudo do tecido NAT é relevante para compreender os mecanismos de campo cancerígeno (*field cancerization*) e identificar potenciais alvos terapêuticos ou marcadores de diagnóstico precoce.
+This work was carried out during an internship at **IPO — Instituto Português de Oncologia**, as part of a research line on biomarkers and epigenetic/genomic alterations in prostate cancer. The study of NAT is relevant for understanding the mechanisms of field cancerization and identifying potential therapeutic targets or early diagnostic markers.
 
 ---
-
-
-
